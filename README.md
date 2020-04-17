@@ -8,8 +8,15 @@ Luc Batty and Anila Qureshi have decided to work on Tanzania's water crisis. Fro
 
 It is up to us to clean the dataset. We will be conducting a train_test_split. This will be followed by using machine learning algorithms to best understand and fairly predict the overaching problems stated above. From here we will be looking at creating a target variable by conducting ternary classification. We will be creating a baseline model. The baseline will help to play an important role as a benchmark for the models to come. From this baseline model we will then produce 3 learner models with hyper parameter optimisation. We will pick the best performers from each model. 
 
-#Findings: 
+# Findings: 
 
+Luc and Anila have decided to split the problem into 2. Luc conducted ternary classification. This proved to be difficult with regards to finding true positives and false positives. Anila turned her ternary classification into a binary in order to see whether this could more accurately predict broken water pumps for wells across Tanzania. 
+
+Luc used decision trees, random forest and ABABoost. 
+
+Anila used a logistic regression then she used hyper parameter on this followed by decision tree, and XGBoost. The decision tree and XGBoost did not work. This resulted in calculating predictions based on her baseline and logistic regression learner model.
+
+After creating two separate baseline models and separate learners it has come to our attention that the best way to predict replacement pumps is to have a general checkup and system where the condition of the pumps are recorded. The top predicted featured listed in looks EDA shows what to look out for before the break of a pump occurs. 
 
 
 Directory Overview: 
